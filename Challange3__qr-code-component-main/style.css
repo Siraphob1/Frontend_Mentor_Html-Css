@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Fugaz+One&family=Hanken+Grotesk:wght@500&family=Montserrat:wght@100&family=Nunito:wght@200&family=Outfit&display=swap');
+
+:root{
+
+--BORDER: 1px solid black;
+
+/* ---------------------COLOR--------------------- */
+--COLOR-White: hsl(0, 0%, 100%);
+--COLOR-Light-gray: hsl(212, 45%, 89%);
+--COLOR-Grayish-blue: hsl(220, 15%, 55%);
+--COLOR-Dark-blue: hsl(218, 44%, 22%);
+
+/* ---------------------FONT FAMILY--------------------- */
+--FF: 'Outfit', sans-serif;
+
+/* ---------------------FONT SIZE--------------------- */
+--FS-P: 15px;
+
+/* ---------------------FONT WEIGHT--------------------- */
+--FW-S: 400;
+--FW-M: 700;
+
+/* ---------------------FONT WEIGHT--------------------- */
+--S-MOBILE: 375px;
+--S-DESKTOP: 1440px;
+}
+
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    height: 100vh;
+    /* width: var(--S-DESKTOP); */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--COLOR-Light-gray);
+}
+
+/* ---------------------CARD--------------------- */
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+    width: 300px;
+    height: 450px;
+
+    padding: 10px;
+
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1px 1px 50px 10px var(--COLOR-Light-gray);
+
+    background-color: white;
+    margin: 20px;
+}
+
+
+
+
+.figure{    
+    width: 280px;  
+    height: 280px;
+
+    margin-top: 10px;
+}
+
+.figure img{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.article{   
+    font-family: var(--FF);
+    margin: 10px 20px 20px 20px;
+    text-align: center;
+}
+
+.header{
+    font-weight: var(--FW-M);
+    font-size: 1.2rem;
+    color: var(--COLOR-Dark-blue);
+    
+    margin: 0 20px 0 20px;
+    
+}
+.description{
+
+    color: var(--COLOR-Grayish-blue);
+
+    font-size: var(--FS-P);
+    font-weight: var(--FW-S);
+
+    margin-top: 20px;
+
+    line-height: 1rem;
+}
+
+/* ---------------------RESPONSE--------------------- */
+@media screen and (max-width: 500px) {
+    html{
+        height: 100%;
+    }
+    body{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    
+}
