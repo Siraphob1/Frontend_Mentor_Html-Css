@@ -1,0 +1,165 @@
+
+:root{
+    --Border: 1px solid black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 1200px;
+    height: 600px;
+
+    border: var(--Border);
+
+    position: relative;
+}
+
+
+/* -----------------------TOP------------------------- */
+.top{
+    width: 100%;
+    height: 250px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+/* -----------------------TOP LEFT------------------------- */
+.article{
+    width: 400px;
+    height: auto;
+
+    border: var(--Border);
+}
+/* -----------------------TOP RIGHT------------------------- */
+.rate-score{
+    width: 600px;
+    height: auto;
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.rate-score *{
+    width: 400px;
+    height: 40px;
+
+    border: var(--Border);
+    border-radius: 5px;
+    display: flex;
+
+    list-style: none;
+    border: none;
+}
+
+.rate-score li{
+    border: var(--Border);
+}
+
+.rate-score li:nth-child(2){
+  align-self: center;  
+}
+.rate-score li:nth-child(3){
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.group-icon{
+    
+    width: 140px;
+
+    display: flex;
+    align-items: center;
+
+    margin-left: 30px;
+
+   
+}
+.icon-star{
+    width: 100%;
+    height: 20px;
+    background-image: url(/Challange5_social-proof-section-master/images/icon-star.svg);
+    background-repeat: space;
+
+   
+}
+.topic-text{
+    width: 200px;
+
+    display: flex;
+    align-items: center;
+
+    margin-left: 30px;
+    
+}
+
+/* -----------------------BOTTOM------------------------- */
+
+.bottom{
+    width: 100%;
+    height: 250px;    
+
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 300px;
+    height: 220px;
+
+    border: var(--Border);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.user2{
+    align-self: center;
+}
+
+.user3{
+    align-self: flex-end;
+}
+
+
+.data-user{
+    display: flex;
+    align-items: center;
+    
+}
+.post-user{
+    margin-top: 20px;
+    
+}
+
+
+.profile-user{
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;    
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 20px;
+}
+
