@@ -1,6 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Fugaz+One&family=Hanken+Grotesk:wght@500&family=League+Spartan&family=Montserrat:wght@100&family=Nunito:wght@200&family=Outfit&display=swap');
 
-:root{
+:root{    
+/* -----------------------BORDER------------------------- */
     --Border: 1px solid black;
+
+
+/* -----------------------COLOR------------------------- */   
+    --COLOR-Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --COLOR-Soft-Pink: hsl(333, 80%, 67%);
+
+    --COLOR-Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --COLOR-Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --COLOR-White: hsl(0, 0%, 100%);
+
+/* -----------------------FONT SIZE------------------------- */   
+    --FS: 15px;
+
+/* -----------------------FONT FAMILY------------------------- */   
+    --FF: 'League Spartan', sans-serif;
+/* -----------------------FONT WEIGHT------------------------- */   
+    --FW-S: 400;
+    --FW-M: 500;
+    --FW-L: 700;
+
+
 }
 *{
     margin: 0;
@@ -9,20 +32,30 @@
 }
 
 body{
-    height: 100vh;
-
+    height: 100vh;   
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-family: var(--FF);
+    font-size: var(--FS);
+    font-weight: var(--FW-S);
+    color: var(--COLOR-Very-Dark-Magenta);
+
+    background-image: url(/Challange5_social-proof-section-master/images/bg-pattern-top-desktop.svg);
+    background-repeat:repeat-x;
+
 }
 
 .container{
     width: 1200px;
-    height: 600px;
+    height: auto;    
 
-    border: var(--Border);
 
-    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    
 }
 
 
@@ -33,14 +66,26 @@ body{
     
     display: flex;
     justify-content: space-between;
+
 }
 /* -----------------------TOP LEFT------------------------- */
 .article{
-    width: 400px;
+    width: 350px;
     height: auto;
-
-    border: var(--Border);
 }
+.h1{
+    font-size: 3rem;
+    font-weight: var(--FW-L);
+    line-height: 2.8rem;
+}
+.description{
+    color: var(--COLOR-Dark-Grayish-Magenta);
+
+    
+    margin-top: 20px;
+}
+
+
 /* -----------------------TOP RIGHT------------------------- */
 .rate-score{
     width: 600px;
@@ -65,10 +110,12 @@ body{
 
     list-style: none;
     border: none;
+
+    font-weight: var(--FW-L);
 }
 
 .rate-score li{
-    border: var(--Border);
+    background-color: var(--COLOR-Light-Grayish-Magenta);
 }
 
 .rate-score li:nth-child(2){
@@ -112,22 +159,29 @@ body{
 
 .bottom{
     width: 100%;
-    height: 250px;    
-
-    position: absolute;
-    bottom: 0;
+    height: 250px;        
 
     display: flex;
     justify-content: space-between;
+
+    margin-top: 2rem;
 }
 
 .card{
     width: 300px;
-    height: 220px;
+    height: 190px;
 
     border: var(--Border);
     border-radius: 8px;
     padding: 20px;
+
+    line-height: 20px;
+    background-color: var(--COLOR-Very-Dark-Magenta);
+    color: var(--COLOR-White);
+}
+
+.verified{
+    color: var(--COLOR-Soft-Pink)
 }
 
 .user2{
@@ -162,4 +216,107 @@ body{
 
     margin-left: 20px;
 }
+
+
+
+/* -----------------------RESPONSIVE ------------------------- */
+@media screen and (max-width:1050px) {
+    
+    body{
+        height: 100%;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;    
+        
+        display: flex;
+        align-items: unset;
+        justify-content: center;
+    }
+
+    .container{       
+        height: auto;
+        width: 375px;
+        margin-top: 3rem;
+        
+     }
+
+/* -----------------------TOP------------------------- */
+     .top{
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-bottom: 2rem;
+
+    }
+    .article{
+        text-align: center;
+    }
+    .h1{
+        padding: 0.5rem 0 0.5rem 0;
+        line-height: 2.5rem;
+    }
+
+    .rate-score{
+        display:  flex;
+        align-items: center;
+        justify-content: unset;   
+        
+        padding: 0;
+        margin-top: 1rem;
+    }
+
+    .rate-score li{
+        margin-top: 20px;
+        height: auto;
+    }
+    .rate-score li:nth-child(3){
+        align-self: unset;
+    }
+    .rate-score .score{
+        height: auto;
+    }
+    .rate-score .score ,.rate-score .topic{
+        display:  flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+    .rate-score .group-icon{
+        height: auto;
+        margin-top: 1rem;
+    }
+    
+    .topic-text{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+/* -----------------------BOTTOM------------------------- */
+    .bottom{
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+
+        padding-bottom: 2rem;
+    }
+
+    .bottom .user3{
+        align-self: unset;
+    }
+    .bottom .card{
+        margin-bottom: 20px;
+    }
+
+   
+    
+
+}
+
 
