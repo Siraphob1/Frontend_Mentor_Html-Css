@@ -294,6 +294,14 @@ body{
         flex-direction: row;
         justify-content: center;
     }
+    .group-icon{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .icon-star{
+        width: 70%;
+    }
 /* -----------------------BOTTOM------------------------- */
     .bottom{
         width: 100%;
