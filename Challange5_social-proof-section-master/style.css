@@ -279,6 +279,7 @@ body{
     }
     .rate-score .score{
         height: auto;
+        width: 300px;
     }
     .rate-score .score ,.rate-score .topic{
         display:  flex;
@@ -289,6 +290,7 @@ body{
         height: auto;
         margin-top: 1rem;
     }
+    
     
     .topic-text{
         display: flex;
