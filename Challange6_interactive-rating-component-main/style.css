@@ -60,14 +60,17 @@ body{
     border-radius: 1.5rem;   
     color: var(--C-Medium-Grey);
     font-weight: var(--FW-S); 
-    max-height: auto;  
     height: auto;
     max-width: var(--WIDTH-CONTAINER);
     width: var(--WIDTH-CONTAINER);
 
     padding: 2rem;
 }
+.display-none{
+    display: none;
+}
 
+/* ---------------- PART NOMAL ---------------- */
 .bg-star-icon{
     background-color: var(--C-Dark-Blue);
     border-radius: 50%;
@@ -120,13 +123,13 @@ body{
     align-items: center;
 }
 
-.section-score > span:hover{
-    background-color: var(--C-Medium-Grey);
+.section-score > span:hover{  
+    background-color: var(--C-ORANGE);
     color: var(--C-White);
 }
 
 .section-score > span:active {
-    background-color: var(--C-ORANGE);
+    background-color: var(--C-Medium-Grey);
     color: var(--C-White);
 }
 /* ---------------- DETAIL ---------------- */
@@ -144,4 +147,40 @@ body{
 .btn-submit:active{
     background-color: var(--C-White);
     color: var(--C-ORANGE);
+}
+
+
+/* ---------------- PART THANKYOU ---------------- */
+.part-thankyou{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------------- DETAIL ---------------- */
+.part-thankyou > img{
+    width: 150px;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+/* ---------------- DETAIL ---------------- */
+.selected{
+    background-color: var(--C-Dark-Blue);
+    border: var(--BORDER);
+    border-radius: 2rem;
+    color: var(--C-ORANGE);
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    width: 180px;
+}
+
+/* ---------------- DETAIL ---------------- */
+.textcenter{
+    text-align: center;
 }

@@ -15,43 +15,43 @@
 
   <!-- Rating state start -->
   <div class="container">
-      <div class="bg-star-icon">
-        <img src="./images/icon-star.svg" alt="">
-      </div>
-      <h1 class="topic">
-          How did we do?
-      </h1>
-      <p class="describtion">
-          Please let us know how we did with your support request. All feedback is appreciated 
-          to help us improve our offering!
-      </p>
-      <section class="section-score">
-        <span class="score">1</span>
-        <span class="score">2</span>
-        <span class="score">3</span>
-        <span class="score">4</span>
-        <span class="score">5</span>
+      <section class="" id="part-normal">
+          <div class="bg-star-icon">
+              <img src="./images/icon-star.svg" alt="">
+          </div>
+          <h1 class="topic">
+              How did we do?
+          </h1>
+          <p class="describtion">
+              Please let us know how we did with your support request. All feedback is appreciated 
+              to help us improve our offering!
+          </p>
+          <section class="section-score">
+              <span class="score" id="score1" onclick="changeText(1)">1</span>
+              <span class="score" id="score2" onclick="changeText(2)">2</span>
+              <span class="score" id="score3" onclick="changeText(3)">3</span>
+              <span class="score" id="score4" onclick="changeText(4)">4</span>
+              <span class="score" id="score5" onclick="changeText(5)">5</span>
+          </section>
+          <button class="btn-submit">Submit</button>
       </section>
-      <button class="btn-submit">Submit</button>
+      <section class="display-none" id="part-thankyou">
+          <div class="part-thankyou">
+              <img src="./images/illustration-thank-you.svg" alt="">
+             <div class="selected" id="selected">
+                 You selected 5 out of 5
+              </div>
+              <h1 class="topic">
+                  Thank you!
+              </h1>
+              <p class="describtion textcenter">
+                  We appreciate you taking the time to give a rating. If you ever need more support, 
+                  don’t hesitate to get in touch!
+             </p>
+          </div>
+      </section>
   </div>
 
-
-  
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  <!-- You selected  Add rating here  out of 5 -->
-
-  <!-- Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch! -->
-
-  <!-- Thank you state end -->
-
-  
-  
+  <script src="./app.js"></script>
 </body>
 </html>
