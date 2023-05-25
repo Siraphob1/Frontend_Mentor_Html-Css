@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Fugaz+One&family=Hanken+Grotesk:wght@500&family=League+Spartan&family=Montserrat:wght@100&family=Nunito:wght@200&family=Outfit&family=Overpass:wght@100&display=swap');
+
+:root{
+/* ----------------BORDER---------------- */
+    --BORDER: 1px solid black;
+
+/* ----------------COLOR---------------- */
+    --C-ORANGE: hsl(25, 97%, 53%);
+    --C-White: hsl(0, 0%, 100%);
+    --C-Light-Grey: hsl(217, 12%, 63%);
+    --C-Medium-Grey: hsl(216, 12%, 54%);
+    --C-Dark-Blue: hsl(213, 19%, 18%);
+    --C-Very-Dark-Blue: hsl(216, 12%, 8%);
+
+/* ----------------FONT FAMILY---------------- */
+    --FF-OVERPASS: 'Overpass', sans-serif;
+
+/* ----------------FONT SIZE---------------- */
+    --FS-P: 15px;
+
+/* ----------------FONT SIZE---------------- */
+    --FW-S: 400;
+    --FW-M: 700;
+
+/* ----------------WIDTH---------------- */
+    --WIDTH-MOBILE: 375px;
+    --WIDTH-DESKTOP: 1440px;
+    --WIDTH-CONTAINER: 400px;
+    --HIGHT-CONTAINER: 400px;
+}
+
+
+/* ---------------- TOTAL PAGE---------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+    font-family: var(--FF-OVERPASS);
+    
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.977);
+    /* width: var(--WIDTH-DESKTOP); */
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 1rem ;
+}
+
+
+/* ---------------- DETAIL ---------------- */
+.container{
+    background-color: var(--C-Very-Dark-Blue);
+    border-radius: 1.5rem;   
+    color: var(--C-Medium-Grey);
+    font-weight: var(--FW-S); 
+    max-height: auto;  
+    height: auto;
+    max-width: var(--WIDTH-CONTAINER);
+    width: var(--WIDTH-CONTAINER);
+
+    padding: 2rem;
+}
+
+.bg-star-icon{
+    background-color: var(--C-Dark-Blue);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 1rem;    
+}
+.bg-star-icon > img{
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+/* ---------------- DETAIL ---------------- */
+.topic{
+    font-size: 1.75rem;
+    font-weight: var(--FW-M);
+    margin-bottom: 1rem;
+    color: var(--C-White);
+}
+
+/* ---------------- DETAIL ---------------- */
+.describtion{
+    font-size: var(--FS-P);
+    margin-bottom: 2rem;
+
+}
+
+/* ---------------- DETAIL ---------------- */
+.section-score{    
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 2rem;
+}
+
+.section-score > span{
+    background-color: var(--C-Dark-Blue);
+    border-radius: 50%;
+    color: var(--C-Light-Grey);
+    width: 3rem;
+    height: 3rem;
+    font-style: 2rem;
+    font-weight: bold;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-score > span:hover{
+    background-color: var(--C-Medium-Grey);
+    color: var(--C-White);
+}
+
+.section-score > span:active {
+    background-color: var(--C-ORANGE);
+    color: var(--C-White);
+}
+/* ---------------- DETAIL ---------------- */
+.btn-submit{
+    background-color: var(--C-ORANGE);
+    border: none;
+    border-radius: 1rem;
+    color: var(--C-White);  
+    font-weight: var(--FW-M);
+    width: 100%;
+    height: 2rem;
+    text-transform: uppercase;
+}
+
+.btn-submit:active{
+    background-color: var(--C-White);
+    color: var(--C-ORANGE);
+}
