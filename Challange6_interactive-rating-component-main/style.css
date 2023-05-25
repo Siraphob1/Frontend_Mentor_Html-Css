@@ -111,7 +111,7 @@ body{
 }
 
 .section-score > span{
-    background-color: var(--C-Dark-Blue);
+    background-color: var(F--C-Dark-Blue);
     border-radius: 50%;
     color: var(--C-Light-Grey);
     width: 3rem;
@@ -128,10 +128,12 @@ body{
     color: var(--C-White);
 }
 
-.section-score > span:active {
+.score-select{
     background-color: var(--C-Medium-Grey);
     color: var(--C-White);
 }
+
+
 /* ---------------- DETAIL ---------------- */
 .btn-submit{
     background-color: var(--C-ORANGE);
