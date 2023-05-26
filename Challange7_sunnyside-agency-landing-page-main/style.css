@@ -93,19 +93,22 @@ body{
 
 }
 .item1-a:hover a{
-  /* background-color: rgba(245, 245, 245, 0.296);   */
   background-color: var(--C-White);  
   color: black;
   height: 100%;
   font-family: var(--FF-FRAUNCES);
   text-transform: uppercase;
 }
+.item1-a:active a{
+  background-color: rgba(245, 245, 245, 0.544);
+}
 
 .item1-topic{
   display: flex;
   justify-content: center;
   font-family: var(--FF-FRAUNCES);
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: var(--FW-FRAUNCES-M);
   text-transform: uppercase;
   word-spacing: 0.5rem;
   margin-top: 7rem;
@@ -190,7 +193,7 @@ ion-icon {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,100%);
+  transform: translate(-50%,50%);
 }
 .text-title2 , .text-description2{
   text-align: center;
@@ -200,7 +203,8 @@ ion-icon {
   font-family: var(--FF-FRAUNCES);
   font-size: 2rem;
   text-transform: capitalize;
-  color: var(--C-Very-dark-grayish-blue);
+  /* color: var(--C-Very-dark-grayish-blue); */
+  color: var(--C-Dark-blue);
 }
 
 .text-description2{
@@ -209,3 +213,120 @@ ion-icon {
   color: var(--C-Dark-moderate-cyan);
 }
 
+/* --------------------CLIENT TEST-------------------- */
+.client-test{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5rem;
+}
+
+.client-topic{
+  color: var(--C-Grayish-blue);
+  font-family: var(--FF-FRAUNCES);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
+}
+
+.client-all{
+  display: flex;  
+}
+
+.client-card{
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  padding: 2rem;
+  
+}
+.client-profile{
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;  
+  margin-bottom: 3rem;
+}
+.client-description{
+  text-align: center;
+  margin-bottom: 3rem;
+  width: 320px;
+  max-width: 320px;
+  line-height: 1.5rem;
+  font-family: var(--FF-BARLOW);
+  color: var(--C-Very-dark-grayish-blue);
+}
+.client-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.client-name{
+  font-family: var(--FF-FRAUNCES);
+  margin-bottom: 0.8rem;
+  font-weight: var(--FW-FRAUNCES-M);
+}
+.client-job{
+  font-family: var(--FF-BARLOW);
+  color: var(--C-Grayish-blue);
+}
+
+/* --------------------SECOND FOOT-------------------- */
+.second-foot{
+  display: flex;
+}
+.second-foot-img{
+  height: auto;
+  width: 25%;
+}
+
+/* --------------------SECOND FOOT-------------------- */
+.footer{
+    background-color:var(--C-Grayish-blue);
+}
+.footer-group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+}
+.footer-icon{
+  color: var(--C-Dark-desaturated-cyan);
+  font-family: var(--FF-FRAUNCES);
+  font-size: 2rem;
+  font-weight: var(--FW-FRAUNCES-M);
+
+}
+.footer-nav{
+  display: flex;
+  margin-top: 2rem;
+}
+.footer-a{
+  list-style: none;
+  padding: 0 2rem;
+}
+.footer-a a{
+  color: var(--C-Dark-moderate-cyan);
+  font-family: var(--FF-BARLOW);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.footer-multi-icon{
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+.fa-brands{
+  padding: 0 1rem;  
+  color: var(--C-Dark-desaturated-cyan);
+  font-size: 1.2rem;
+}
