@@ -178,32 +178,88 @@ ion-icon {
   margin-bottom: 2rem;
 }
 
-.text-link{
+.text-link{  
   color: var(--C-Very-dark-desaturated-blue);
   font-family: var(--FF-FRAUNCES);
+  position: relative;
   text-transform: uppercase;
   text-decoration: none;
+  z-index: 0;
+}
+.text-link::after{
+  content: "";
+  background-color: hsla(51, 100%, 49%, 0.347);
+  border-radius: 1rem;
+  width: 120%;
+  height: 1rem;
+  position: absolute;
+  top: 12px;
+  left: -70%;
+  transform: translateX(50%);
+  z-index: -1;
+}
+.text-link:hover::after{
+  background-color: var(--C-Yellow);
+}
+.text-link2{  
+  color: var(--C-Very-dark-desaturated-blue);
+  font-family: var(--FF-FRAUNCES);
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  z-index: 0;
+}
+.text-link2::after{
+  content: "";
+  background-color: hsla(7, 99%, 70%, 0.347);
+  border-radius: 1rem;
+  width: 120%;
+  height: 1rem;
+  position: absolute;
+  top: 12px;
+  left: -70%;
+  transform: translateX(50%);
+  z-index: -1;
+}
+.text-link2:hover::after{
+  background-color: var(--C-Soft-red);
+}
+/* --------------------FLEX IMG RELATIVE-------------------- */
+.flex-img{
+  background-size:cover;
+  background-repeat: no-repeat;  
+  background-position: center;
+  height: 600px;
+  max-height: 600px;
+
+  
+} 
+.flex-img1{
+  background-image: url("/Challange7_sunnyside-agency-landing-page-main//images/desktop/image-graphic-design.jpg");
 }
 
-/* --------------------FLEX IMG RELATIVE-------------------- */
-.graphic-relative{
-  position: relative;
+.flex-img2{
+  background-image: url("/Challange7_sunnyside-agency-landing-page-main//images/desktop/image-photography.jpg");
 }
-.text-group3{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,50%);
-}
+
 .text-title2 , .text-description2{
   text-align: center;
 }
+
+.edge{
+  border: var(--BORDER);
+  margin-top: 50%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 380px;
+  max-width: 380px;
+}
+
 .text-title2{
   margin-bottom: 2rem;
   font-family: var(--FF-FRAUNCES);
   font-size: 2rem;
   text-transform: capitalize;
-  /* color: var(--C-Very-dark-grayish-blue); */
   color: var(--C-Dark-blue);
 }
 
@@ -211,23 +267,18 @@ ion-icon {
   font-family: var(--FF-BARLOW);
   font-size: var(--FS);
   color: var(--C-Dark-moderate-cyan);
-}
+} */
 
 /* --------------------CLIENT TEST-------------------- */
 .client-test{
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  padding: 5rem;
 }
 
 .client-topic{
   color: var(--C-Grayish-blue);
   font-family: var(--FF-FRAUNCES);
   font-size: 1.3rem;
+  text-align: center;
   text-transform: uppercase;
   margin-top: 3rem;
   margin-bottom: 2rem;
@@ -237,35 +288,44 @@ ion-icon {
 
 .client-all{
   display: flex;  
+  justify-content: center;
+  width: 100%;
 }
 
 .client-card{
   display: flex;
   flex-direction: column;  
   align-items: center;
-  padding: 2rem;
+  width: 380px;
+  max-width: 380px;
   
 }
+
 .client-profile{
   border-radius: 50%;
   height: 70px;
   width: 70px;  
+  margin-top: 2rem;
   margin-bottom: 3rem;
 }
+
 .client-description{
-  text-align: center;
+  color: var(--C-Very-dark-grayish-blue);
+  font-family: var(--FF-BARLOW);
   margin-bottom: 3rem;
   width: 320px;
   max-width: 320px;
   line-height: 1.5rem;
-  font-family: var(--FF-BARLOW);
-  color: var(--C-Very-dark-grayish-blue);
+  text-align: center;
+
 }
+
 .client-data{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
   
 }
 
@@ -288,7 +348,7 @@ ion-icon {
   width: 25%;
 }
 
-/* --------------------SECOND FOOT-------------------- */
+/* --------------------FOOTER-------------------- */
 .footer{
     background-color:var(--C-Grayish-blue);
 }
