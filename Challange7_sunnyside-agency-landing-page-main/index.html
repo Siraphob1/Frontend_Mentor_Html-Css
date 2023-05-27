@@ -11,26 +11,28 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body onresize="SwitchResize()">
 
-  <header class="item1">
-      <nav class="item1-nav">
-          <span class="item1-icon">sunnyside</span>
-          <ul class="item1-ul">
-            <li class="item1-a"><a href="#">About</a></li>
-            <li class="item1-a"><a href="#">Services</a></li>
-            <li class="item1-a"><a href="#">Projects</a></li>
-            <li class="item1-a"><a href="#">Contact</a></li>
+  <header class="s-header bg-head bg-size-norepeat">
+      <nav class="s-header-nav ">
+          <span class="s-header-name">sunnyside</span>
+          <ul class="link-cls-style s-header-link s-toggle-link-desktop" id="header-link" >
+            <li class=""><a href="#" onclick="SwitchToggleMenu()">About</a></li>
+            <li class=""><a href="#" onclick="SwitchToggleMenu()">Services</a></li>
+            <li class=""><a href="#" onclick="SwitchToggleMenu()">Projects</a></li>
+            <li class=""><a href="#" onclick="SwitchToggleMenu()">Contact</a></li>
           </ul>
-          <span class="item1-bar">
+          <span class="s-header-imenu" id="imenu" onclick="SwitchToggleMenu()">
             <i class="fa-solid fa-bars fa-2xl"></i>
           </span>
       </nav>
-      <div class="item1-topic">
+      <span class="ff-fraunces s-header-topic">
           We are creatives
-      </div>
-      <img src="./images/icon-arrow-down.svg" alt="" class="item1-arrow">
+      </span>
+      <img src="./images/icon-arrow-down.svg" alt="" class="s-header-arrow">
   </header>
+
+
   <!-- <section class="flex flex-normal">
       <section class="flex-text">
           <div class="text-group1">
@@ -139,7 +141,7 @@
       </nav>
   </footer> -->
   
- 
+ <script src="./script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
