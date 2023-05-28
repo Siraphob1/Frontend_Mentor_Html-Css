@@ -32,301 +32,305 @@
 }
 
 
+/* --------------------BACKGROUND-------------------- */
+.bg-head{
+  background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/desktop/image-header.jpg");
+}
+.bg-egg{
+  background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/desktop/image-transform.jpg");
+}
+.bg-glass{
+  background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/desktop/image-stand-out.jpg");
+}
+.bg-graphic{
+  background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/desktop/image-graphic-design.jpg");
+}
+.bg-photography{
+  background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg");
+}
+.bg-milk{
+  background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/desktop/image-gallery-milkbottles.jpg");
+}
+.bg-orange{
+  background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/desktop/image-gallery-orange.jpg");
+}
+.bg-cone{
+  background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/desktop/image-gallery-cone.jpg");
+}
+.bg-sugar{
+  background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/desktop/image-gallery-sugarcubes.jpg");
+}
+.bg-size-norepeat{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-size-norepeat-center{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.border{
+  border: var(--BORDER);
+}
+
+
+/* --------------------FONT FAMILY-------------------- */
+.ff-barlow{
+  font-family: var(--FF-BARLOW);
+}
+.ff-fraunces{
+  font-family: var(--FF-FRAUNCES);
+}
+
+
+/* --------------------FLEX-------------------- */
+.flex{
+  display: flex;
+}
+.flex-w5050 section{
+  width: 50vw;
+  height:50vw;
+}
+
+/* --------------------FLEX DIRECTION-------------------- */
+.flex-d-row{
+  flex-direction: row;
+}
+.flex-d-row-reverse{
+  flex-direction: row-reverse;
+}
+.flex-d-column{
+  flex-direction: column;
+}
+.flex-d-column-reverse{
+  flex-direction: column-reverse;
+}
+
+
+/* --------------------LINK-------------------- */
+.link-cls-style li{
+  list-style: none;
+}
+.link-cls-style li a{
+  text-decoration: none;
+}
+
+.link-ff-barlow li a{
+  font-family: var(--FF-BARLOW);
+}
 
 
 
 
 /* --------------------START-------------------- */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
-  height: auto;
-  width: 100%;
+height: auto;
+width: 100%;
 }
 
 /* --------------------HEADER-------------------- */
-.item1{
-  background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/desktop/image-header.jpg");
-  background-size: cover;
+.s-header{
+  width: 100%;
+  height: 750px;  
   background-position: 50% 90%;
-  width: 100%;
-  height: 700px;
-}
-
-.item1{  
   color: var(--C-White);
+  font-family: var(--FF-FRAUNCES);
+  position: relative;
 }
 
-.item1-nav{
+.s-header-nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 2rem;
+  text-align: center;
 }
-
-.item1-nav > ul{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.item1-nav > ul li{  
-  height: 2rem;
-  list-style: none;
-  height: 2.5rem;
-}
-
-.item1-a a{
-  display: flex;
-  align-items: center;   
-  border-radius: 2rem;  
-  color: var(--C-White);  
-  height: 100%;
-  padding: 0 1.5rem;
-  font-family: var(--FF-BARLOW);
-  font-size: 1rem;  
-  text-decoration: none;
-
-}
-.item1-a:hover a{
-  background-color: var(--C-White);  
-  color: black;
-  height: 100%;
-  font-family: var(--FF-FRAUNCES);
-  text-transform: uppercase;
-}
-.item1-a:active a{
-  background-color: rgba(245, 245, 245, 0.544);
-}
-
-.item1-topic{
-  display: flex;
-  justify-content: center;
-  font-family: var(--FF-FRAUNCES);
-  font-size: 3rem;
-  font-weight: var(--FW-FRAUNCES-M);
-  text-transform: uppercase;
-  word-spacing: 0.5rem;
-  margin-top: 7rem;
-}
-
-.item1-icon{
+.s-header-name{
   font-size: 1.5rem;
-  font-family: var(--FF-FRAUNCES);
 }
-
-.item1-arrow{
+.s-header-imenu{
+  display: none;
+}
+.s-toggle-link-desktop{
   display: flex;
-  justify-content: center;
-  margin-top: 7rem;
+}
+.s-header-link{
+  padding-right: 2rem;
 }
 
-ion-icon {
-  font-size: 1rem;
-  transform: scale(8,8);
+.s-header-link li a{
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  color: var(--C-White);
+  font-family: var(--FF-BARLOW);
 }
-
-/* --------------------FLEX-------------------- */
-.flex{
-  display: flex; 
-  width: 100%; 
-}
-.flex-text , .flex-img{
-  width: 50%;
-}
-.flex-img img {
-  width: 100%;
-  height: 100%;
-}
-
-/* --------------------FLEX REVERSE-------------------- */
-.flex-reverse{
-  flex-direction: row-reverse;
-}
-
-/* --------------------FLEX TEXT-------------------- */
-.flex-text{
+.s-header-link li a:hover{
   background-color: var(--C-White);
+  font-family: var(--FF-FRAUNCES);
+  color: var(--C-Dark-blue);
+  text-transform: uppercase;
+}
+.s-header-topic{
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.s-header-arrow{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* --------------------EGG GLASS-------------------- */
+.text-group1{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.text-group1{
-  width: 60%;
+.text-group1 >div{
+  width: 450px;
+  max-width: 450px;
 }
-.text-group2{
-  width: 70%;
-}
-
-.text-title1{
+.text-group1 > div >h1{
   color: var(--C-Very-dark-desaturated-blue);
   font-family: var(--FF-FRAUNCES);
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: var(--FW-FRAUNCES-M);
   margin-bottom: 2rem;
 }
-
-.text-description1{
+.text-group1 > div > p{
   color: var(--C-Dark-grayish-blue);
   font-family: var(--FF-BARLOW);
   font-size: var(--FS);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
-
-.text-link{  
+.text-group1 > div > a{
   color: var(--C-Very-dark-desaturated-blue);
   font-family: var(--FF-FRAUNCES);
-  position: relative;
-  text-transform: uppercase;
+  font-weight: var(--FW-FRAUNCES-M);
   text-decoration: none;
-  z-index: 0;
+  text-transform: uppercase;
+  position: relative;
 }
-.text-link::after{
+.text-group1 > div > a::after{
   content: "";
-  background-color: hsla(51, 100%, 49%, 0.347);
   border-radius: 1rem;
   width: 120%;
   height: 1rem;
   position: absolute;
-  top: 12px;
+  top: 13px;
   left: -70%;
   transform: translateX(50%);
   z-index: -1;
 }
-.text-link:hover::after{
+.text-group1a1::after{
+  background-color: hsla(51, 100%, 49%, 0.347);
+}
+.text-group1a1:hover::after{
   background-color: var(--C-Yellow);
 }
-.text-link2{  
-  color: var(--C-Very-dark-desaturated-blue);
-  font-family: var(--FF-FRAUNCES);
-  position: relative;
-  text-transform: uppercase;
-  text-decoration: none;
-  z-index: 0;
+.text-group1a2::after{
+  background-color: hsla(7, 99%, 70%, 0.347);;
 }
-.text-link2::after{
-  content: "";
-  background-color: hsla(7, 99%, 70%, 0.347);
-  border-radius: 1rem;
-  width: 120%;
-  height: 1rem;
-  position: absolute;
-  top: 12px;
-  left: -70%;
-  transform: translateX(50%);
-  z-index: -1;
-}
-.text-link2:hover::after{
+.text-group1a2:hover::after{
   background-color: var(--C-Soft-red);
 }
-/* --------------------FLEX IMG RELATIVE-------------------- */
-.flex-img{
-  background-size:cover;
-  background-repeat: no-repeat;  
-  background-position: center;
-  height: 600px;
-  max-height: 600px;
 
-  
-} 
-.flex-img1{
-  background-image: url("/Challange7_sunnyside-agency-landing-page-main//images/desktop/image-graphic-design.jpg");
+/* --------------------GRAPHIC PHOTOGRAPHY-------------------- */
+.text-group2{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 5rem;
 }
-
-.flex-img2{
-  background-image: url("/Challange7_sunnyside-agency-landing-page-main//images/desktop/image-photography.jpg");
-}
-
-.text-title2 , .text-description2{
-  text-align: center;
-}
-
-.edge{
-  border: var(--BORDER);
-  margin-top: 50%;
-  margin-left: 50%;
-  transform: translateX(-50%);
+.text-group2 > div{
   width: 380px;
   max-width: 380px;
 }
-
-.text-title2{
-  margin-bottom: 2rem;
+.text-group2 > div > h1{
+  color: var(--C-Very-dark-grayish-blue);
   font-family: var(--FF-FRAUNCES);
   font-size: 2rem;
+  font-weight: var(--FW-FRAUNCES-M);
+  margin-bottom: 2rem;
+  text-align: center;
   text-transform: capitalize;
-  color: var(--C-Dark-blue);
 }
-
-.text-description2{
+.text-group2 > div > p{
+  color: var(--C-Very-dark-grayish-blue);
   font-family: var(--FF-BARLOW);
   font-size: var(--FS);
-  color: var(--C-Dark-moderate-cyan);
-} */
+  font-weight: var(--FW-BARLOW);
+  line-height: 1.5rem;
+  margin-bottom: 2rem;  
+  text-align: center;
+}
 
 /* --------------------CLIENT TEST-------------------- */
 .client-test{
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5rem;
 }
 
 .client-topic{
   color: var(--C-Grayish-blue);
   font-family: var(--FF-FRAUNCES);
   font-size: 1.3rem;
-  text-align: center;
-  text-transform: uppercase;
   margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   word-spacing: 0.5rem;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.3rem;  
+  text-transform: uppercase;
 }
 
 .client-all{
   display: flex;  
-  justify-content: center;
-  width: 100%;
 }
 
 .client-card{
   display: flex;
   flex-direction: column;  
   align-items: center;
-  width: 380px;
-  max-width: 380px;
-  
+  padding: 1rem;
 }
 
 .client-profile{
   border-radius: 50%;
   height: 70px;
   width: 70px;  
-  margin-top: 2rem;
   margin-bottom: 3rem;
 }
-
-.client-description{
+.client-description{  
   color: var(--C-Very-dark-grayish-blue);
   font-family: var(--FF-BARLOW);
-  margin-bottom: 3rem;
   width: 320px;
   max-width: 320px;
-  line-height: 1.5rem;
+  line-height: 1.5rem;  
+  margin-bottom: 3rem;
   text-align: center;
-
 }
-
 .client-data{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
-  
 }
 
 .client-name{
@@ -342,51 +346,191 @@ ion-icon {
 /* --------------------SECOND FOOT-------------------- */
 .second-foot{
   display: flex;
+  width: 100%;
 }
-.second-foot-img{
-  height: auto;
-  width: 25%;
+
+.second-foot section{  
+  width: 50%;
+  display: flex;
+}
+
+.second-foot section img{
+  width: 50%;
 }
 
 /* --------------------FOOTER-------------------- */
 .footer{
-    background-color:var(--C-Grayish-blue);
+  background-color:var(--C-Grayish-blue);
 }
 .footer-group{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 3rem 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 3rem 0;
 }
 .footer-icon{
-  color: var(--C-Dark-desaturated-cyan);
-  font-family: var(--FF-FRAUNCES);
-  font-size: 2rem;
-  font-weight: var(--FW-FRAUNCES-M);
+color: var(--C-Dark-desaturated-cyan);
+font-family: var(--FF-FRAUNCES);
+font-size: 2rem;
+font-weight: var(--FW-FRAUNCES-M);
 
 }
 .footer-nav{
-  display: flex;
-  margin-top: 2rem;
+display: flex;
+margin-top: 2rem;
 }
 .footer-a{
-  list-style: none;
-  padding: 0 2rem;
+list-style: none;
+padding: 0 2rem;
 }
 .footer-a a{
-  color: var(--C-Dark-moderate-cyan);
-  font-family: var(--FF-BARLOW);
-  font-size: 1.2rem;
-  text-decoration: none;
+color: var(--C-Dark-moderate-cyan);
+font-family: var(--FF-BARLOW);
+font-size: 1.2rem;
+text-decoration: none;
 }
 
+.footer-a:hover a , .fa-brands:hover{
+  color: var(--C-White);
+}
 .footer-multi-icon{
-  margin-top: 4rem;
-  margin-bottom: 1rem;
-  display: flex;
+margin-top: 4rem;
+margin-bottom: 1rem;
+display: flex;
 }
 .fa-brands{
-  padding: 0 1rem;  
-  color: var(--C-Dark-desaturated-cyan);
-  font-size: 1.2rem;
+padding: 0 1rem;  
+color: var(--C-Dark-desaturated-cyan);
+font-size: 1.2rem;
+}
+/* --------------------RESSPONSIVE-------------------- */
+@media only screen and (max-width: 1080px) {
+  .flex-d-row,.flex-d-row-reverse{
+    flex-direction: column;
+  }
+  .flex-w5050 section{
+    width: 100vw;
+    height:100vw;
+  }
+  .second-foot section{
+    width: 100vw;
+  }
+
+}
+
+
+@media only screen and (max-width: 750px) {
+  .s-header-link{
+    display: flex; 
+    padding-right: 0;
+  }
+  .bg-head{
+    background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/mobile/image-header.jpg");
+  }
+  .bg-egg{
+    background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/mobile/image-transform.jpg");
+  }
+  .bg-glass{
+    background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/mobile/image-stand-out.jpg");
+  }
+  .bg-graphic{
+    background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/mobile/image-graphic-design.jpg");
+  }
+  .bg-photography{
+    background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/mobile/image-photography.jpg");
+  }
+  .bg-milk{
+    background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/mobile/image-gallery-milkbottles.jpg");
+  }
+  .bg-orange{
+    background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/mobile/image-gallery-orange.jpg");
+  }
+  .bg-cone{
+    background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/mobile/image-gallery-cone.jpg");
+  }
+  .bg-sugar{
+    background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/mobile/image-gallery-sugar-cubes.jpg");
+  }
+  .flex-w5050 section{
+    width: 100vw;
+    height:620px;
+  }
+  
+  .text-group1 *{
+    text-align: center;
+  }
+  .text-group1 > div{
+    width: 90vw;
+  }
+  .text-group2 > div{
+    width: 90vw;
+  }
+  .client-test{
+    padding: 5rem 0;
+  }
+  .client-topic{
+    font-size: 0.8rem;
+  }
+  .client-card{
+    padding: 1rem 0;
+  }
+  .client-description{
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .s-toggle-link-desktop{
+    display: none;
+  }
+  .s-toggle-link-mobile{
+    display: block;
+  }
+  .s-header-link{    
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    justify-content: center;
+    padding:  1.5rem 0;
+    z-index: 2;
+    background-color: var(--C-White);
+    width: 90%;
+    height: 280px;
+    max-height: 280px;    
+  }
+  .s-header-link li {    
+    padding: 1rem 0;
+  }
+  .s-header-link li a{
+    padding: 1rem 1rem;
+    color: var(--C-Dark-grayish-blue);
+    border-radius: 1.5rem;
+    font-size: 1.1rem;
+  }
+  .s-header-link li a:hover{
+    background-color: var(--C-Yellow);
+    font-size: 1.1rem;
+  }
+  
+  .s-header-imenu{
+    display: block;
+  }
+  
+}
+@media only screen and (max-width: 400px) {
+  .s-header{
+    height: 700px;
+  }
+  .s-header-topic{
+    font-size: 2.5rem;
+    top: 25%;
+  }
+  .s-header-arrow{
+    top: 50%;
+  }
+  .footer-a{
+    padding: 0 1rem;
+  }
 }

@@ -11,67 +11,66 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body onresize="SwitchResize()" onload="SwitchResize()">
 
-  <header class="item1">
-      <nav class="item1-nav">
-          <span class="item1-icon">sunnyside</span>
-          <ul>
-            <li class="item1-a"><a href="#">About</a></li>
-            <li class="item1-a"><a href="#">Services</a></li>
-            <li class="item1-a"><a href="#">Projects</a></li>
-            <li class="item1-a"><a href="#">Contact</a></li>
+  <header class="s-header bg-head bg-size-norepeat">
+      <nav class="s-header-nav ">
+          <span class="s-header-name">sunnyside</span>
+          <ul class="link-cls-style s-header-link s-toggle-link-desktop" id="header-link" >
+            <li class=""><a href="#" onclick="SwitchToggleMenu()">About</a></li>
+            <li class=""><a href="#" onclick="SwitchToggleMenu()">Services</a></li>
+            <li class=""><a href="#" onclick="SwitchToggleMenu()">Projects</a></li>
+            <li class=""><a href="#" onclick="SwitchToggleMenu()">Contact</a></li>
           </ul>
+          <span class="s-header-imenu" id="imenu" onclick="SwitchToggleMenu()">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+          </span>
       </nav>
-      <div class="item1-topic">
+      <span class="ff-fraunces s-header-topic">
           We are creatives
-      </div>
-      <div class="item1-arrow">
-          <ion-icon name="arrow-down-outline" ></ion-icon>
-      </div>
+      </span>
+      <img src="./images/icon-arrow-down.svg" alt="" class="s-header-arrow">
   </header>
-  <section class="flex">
-      <section class="flex-text">
-          <div class="text-group1">
-              <h1 class="text-title1">Transform your brand</h1>
-              <p class="text-description1">
+
+
+   <section class="s-egg flex flex-d-row flex-w5050 ">
+      <section class="text-group1">
+          <div class="">
+              <h1 class="">Transform your brand</h1>
+              <p class="">
                 We are a full-service creative agency specializing in helping brands grow fast. 
                 Engage your clients through compelling visuals that do most of the marketing for you.
               </p>
-              <a href="#" class="text-link">Learn more</a>
+              <a href="#" class="text-group1a1">Learn more</a>
           </div>
       </section>
-      <section class="flex-img">
-          <img src="./images/desktop/image-transform.jpg" alt="" class="img">
-      </section>
+      <section class="bg-egg bg-size-norepeat-center"></section>
   </section>
-  <section class="flex flex-reverse">
-      <section class="flex-text">
-        <div class="text-group2">
-            <h1 class="text-title1">Stand out to the right audience</h1>
-            <p class="text-description1">
+ <section class="s-glass flex flex flex-d-row-reverse flex-w5050 ">
+      <section class="text-group1">
+        <div class="">
+            <h1 class="">Stand out to the right audience</h1>
+            <p class="">
               Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
             </p>
-            <a href="#" class="text-link2">Learn more</a>
+            <a href="#" class="text-group1a2">Learn more</a>
         </div>
       </section>
-      <section class="flex-img">
-          <img src="./images/desktop/image-stand-out.jpg" alt="" class="img">
-      </section>
+      <section class="bg-glass bg-size-norepeat-center"></section>
   </section>
-  <section class="flex">    
-    <section class="flex-img flex-img flex-img1">      
-           <div class="edge">
-                <h1 class="text-title2">Graphic design</h1>
-                <p class="text-description2">
+  <section class="flex flex flex-d-row flex-w5050 section">    
+    <section class="text-group2 bg-graphic bg-size-norepeat-center">      
+           <div class="">
+                <h1 class="">Graphic design</h1>
+                <p class=""">
                   Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
                 </p>
            </div>
       </section>
-    <section class="flex-img flex-img flex-img2">
-            <div class="edge">
-                <h1 class="text-title2">Photography</h1>
-                <p class="text-description2">
+    <section class="text-group2 bg-photography bg-size-norepeat-center">
+            <div class="">
+                <h1 class="">Photography</h1>
+                <p class="">
                   Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
                 </p>
             </div>
@@ -80,7 +79,7 @@
   </section>
   <section class="client-test">
       <div class="client-topic">Client testimonials</div>
-      <div class="client-all">
+      <div class="client-all flex-d-row">
         <section class="client-card">
             <img src="/Challange7_sunnyside-agency-landing-page-main/images/image-emily.jpg" alt="" class="client-profile">
             <p class="client-description">
@@ -113,13 +112,19 @@
         </section>
       </div>
   </section>
-  <section class="second-foot">
-      <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="" class="second-foot-img">
-      <img src="./images/desktop/image-gallery-orange.jpg" alt="" class="second-foot-img">
-      <img src="./images/desktop/image-gallery-cone.jpg" alt="" class="second-foot-img">
-      <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="" class="second-foot-img">
+ <section class="second-foot flex-d-row">
+      <section class="second-foot-inside1">
+        <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="" class="">
+        <img src="./images/desktop/image-gallery-orange.jpg" alt="" class="">
+        
+      </section>        
+      <section class="second-foot-inside1">
+        <img src="./images/desktop/image-gallery-cone.jpg" alt="" class="">
+        <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="" class="">  
+      </section>
+      
   </section>
-  <footer class="footer">
+    <footer class="footer">
       <nav class="footer-group">
         <span class="footer-icon">sunnyside</span>
         <ul class="footer-nav">
@@ -136,7 +141,7 @@
       </nav>
   </footer>
   
- 
+ <script src="./script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
