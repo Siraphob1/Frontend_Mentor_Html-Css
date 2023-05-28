@@ -89,11 +89,14 @@
   display: flex;
 }
 .flex-w5050 section{
-  width: 50%;
+  width: 50vw;
   height:50vw;
 }
 
 /* --------------------FLEX DIRECTION-------------------- */
+.flex-d-row{
+  flex-direction: row;
+}
 .flex-d-row-reverse{
   flex-direction: row-reverse;
 }
@@ -190,11 +193,231 @@ width: 100%;
   left: 50%;
   transform: translateX(-50%);
 }
-/* --------------------EGG-------------------- */
+/* --------------------EGG GLASS-------------------- */
+.text-group1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-group1 >div{
+  width: 450px;
+  max-width: 450px;
+}
+.text-group1 > div >h1{
+  color: var(--C-Very-dark-desaturated-blue);
+  font-family: var(--FF-FRAUNCES);
+  font-size: 2.5rem;
+  font-weight: var(--FW-FRAUNCES-M);
+  margin-bottom: 2rem;
+}
+.text-group1 > div > p{
+  color: var(--C-Dark-grayish-blue);
+  font-family: var(--FF-BARLOW);
+  font-size: var(--FS);
+  margin-bottom: 3rem;
+}
+.text-group1 > div > a{
+  color: var(--C-Very-dark-desaturated-blue);
+  font-family: var(--FF-FRAUNCES);
+  font-weight: var(--FW-FRAUNCES-M);
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+}
+.text-group1 > div > a::after{
+  content: "";
+  border-radius: 1rem;
+  width: 120%;
+  height: 1rem;
+  position: absolute;
+  top: 13px;
+  left: -70%;
+  transform: translateX(50%);
+  z-index: -1;
+}
+.text-group1a1::after{
+  background-color: hsla(51, 100%, 49%, 0.347);
+}
+.text-group1a1:hover::after{
+  background-color: var(--C-Yellow);
+}
+.text-group1a2::after{
+  background-color: hsla(7, 99%, 70%, 0.347);;
+}
+.text-group1a2:hover::after{
+  background-color: var(--C-Soft-red);
+}
 
+/* --------------------GRAPHIC PHOTOGRAPHY-------------------- */
+.text-group2{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 5rem;
+}
+.text-group2 > div{
+  width: 380px;
+  max-width: 380px;
+}
+.text-group2 > div > h1{
+  color: var(--C-Very-dark-grayish-blue);
+  font-family: var(--FF-FRAUNCES);
+  font-size: 2rem;
+  font-weight: var(--FW-FRAUNCES-M);
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+.text-group2 > div > p{
+  color: var(--C-Very-dark-grayish-blue);
+  font-family: var(--FF-BARLOW);
+  font-size: var(--FS);
+  font-weight: var(--FW-BARLOW);
+  line-height: 1.5rem;
+  margin-bottom: 2rem;  
+  text-align: center;
+}
 
+/* --------------------CLIENT TEST-------------------- */
+.client-test{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+  padding: 5rem;
+}
+
+.client-topic{
+  color: var(--C-Grayish-blue);
+  font-family: var(--FF-FRAUNCES);
+  font-size: 1.3rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.3rem;  
+  text-transform: uppercase;
+}
+
+.client-all{
+  display: flex;  
+}
+
+.client-card{
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  padding: 1rem;
+}
+
+.client-profile{
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;  
+  margin-bottom: 3rem;
+}
+.client-description{  
+  color: var(--C-Very-dark-grayish-blue);
+  font-family: var(--FF-BARLOW);
+  width: 320px;
+  max-width: 320px;
+  line-height: 1.5rem;  
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.client-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-name{
+  font-family: var(--FF-FRAUNCES);
+  margin-bottom: 0.8rem;
+  font-weight: var(--FW-FRAUNCES-M);
+}
+.client-job{
+  font-family: var(--FF-BARLOW);
+  color: var(--C-Grayish-blue);
+}
+
+/* --------------------SECOND FOOT-------------------- */
+.second-foot{
+  display: flex;
+  width: 100%;
+}
+
+.second-foot section{  
+  width: 50%;
+  display: flex;
+}
+
+.second-foot section img{
+  width: 50%;
+}
+
+/* --------------------FOOTER-------------------- */
+.footer{
+  background-color:var(--C-Grayish-blue);
+}
+.footer-group{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 3rem 0;
+}
+.footer-icon{
+color: var(--C-Dark-desaturated-cyan);
+font-family: var(--FF-FRAUNCES);
+font-size: 2rem;
+font-weight: var(--FW-FRAUNCES-M);
+
+}
+.footer-nav{
+display: flex;
+margin-top: 2rem;
+}
+.footer-a{
+list-style: none;
+padding: 0 2rem;
+}
+.footer-a a{
+color: var(--C-Dark-moderate-cyan);
+font-family: var(--FF-BARLOW);
+font-size: 1.2rem;
+text-decoration: none;
+}
+
+.footer-a:hover a , .fa-brands:hover{
+  color: var(--C-White);
+}
+.footer-multi-icon{
+margin-top: 4rem;
+margin-bottom: 1rem;
+display: flex;
+}
+.fa-brands{
+padding: 0 1rem;  
+color: var(--C-Dark-desaturated-cyan);
+font-size: 1.2rem;
+}
 /* --------------------RESSPONSIVE-------------------- */
+@media only screen and (max-width: 1080px) {
+  .flex-d-row,.flex-d-row-reverse{
+    flex-direction: column;
+  }
+  .flex-w5050 section{
+    width: 100vw;
+    height:100vw;
+  }
+  .second-foot section{
+    width: 100vw;
+  }
+
+}
+
 
 @media only screen and (max-width: 750px) {
   .s-header-link{
@@ -204,7 +427,56 @@ width: 100%;
   .bg-head{
     background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/mobile/image-header.jpg");
   }
+  .bg-egg{
+    background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/mobile/image-transform.jpg");
+  }
+  .bg-glass{
+    background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/mobile/image-stand-out.jpg");
+  }
+  .bg-graphic{
+    background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/mobile/image-graphic-design.jpg");
+  }
+  .bg-photography{
+    background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/mobile/image-photography.jpg");
+  }
+  .bg-milk{
+    background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/mobile/image-gallery-milkbottles.jpg");
+  }
+  .bg-orange{
+    background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/mobile/image-gallery-orange.jpg");
+  }
+  .bg-cone{
+    background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/mobile/image-gallery-cone.jpg");
+  }
+  .bg-sugar{
+    background-image: url("/Challange7_sunnyside-agency-landing-page-main/images/mobile/image-gallery-sugar-cubes.jpg");
+  }
+  .flex-w5050 section{
+    width: 100vw;
+    height:620px;
+  }
   
+  .text-group1 *{
+    text-align: center;
+  }
+  .text-group1 > div{
+    width: 90vw;
+  }
+  .text-group2 > div{
+    width: 90vw;
+  }
+  .client-test{
+    padding: 5rem 0;
+  }
+  .client-topic{
+    font-size: 0.8rem;
+  }
+  .client-card{
+    padding: 1rem 0;
+  }
+  .client-description{
+    width: 90vw;
+  }
 }
 
 @media only screen and (max-width: 570px) {
@@ -257,5 +529,8 @@ width: 100%;
   }
   .s-header-arrow{
     top: 50%;
+  }
+  .footer-a{
+    padding: 0 1rem;
   }
 }

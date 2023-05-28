@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body onresize="SwitchResize()">
+<body onresize="SwitchResize()" onload="SwitchResize()">
 
   <header class="s-header bg-head bg-size-norepeat">
       <nav class="s-header-nav ">
@@ -33,33 +33,33 @@
   </header>
 
 
-   <section class="s-egg flex flex-w5050 section">
-      <section class="">
+   <section class="s-egg flex flex-d-row flex-w5050 ">
+      <section class="text-group1">
           <div class="">
               <h1 class="">Transform your brand</h1>
               <p class="">
                 We are a full-service creative agency specializing in helping brands grow fast. 
                 Engage your clients through compelling visuals that do most of the marketing for you.
               </p>
-              <a href="#" class="">Learn more</a>
+              <a href="#" class="text-group1a1">Learn more</a>
           </div>
       </section>
       <section class="bg-egg bg-size-norepeat-center"></section>
   </section>
- <section class="flex flex flex-d-row-reverse flex-w5050 section">
-      <section class="">
+ <section class="s-glass flex flex flex-d-row-reverse flex-w5050 ">
+      <section class="text-group1">
         <div class="">
             <h1 class="">Stand out to the right audience</h1>
             <p class="">
               Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
             </p>
-            <a href="#" class="">Learn more</a>
+            <a href="#" class="text-group1a2">Learn more</a>
         </div>
       </section>
       <section class="bg-glass bg-size-norepeat-center"></section>
   </section>
-  <section class="flex flex  flex-w5050 section">    
-    <section class="bg-graphic bg-size-norepeat-center">      
+  <section class="flex flex flex-d-row flex-w5050 section">    
+    <section class="text-group2 bg-graphic bg-size-norepeat-center">      
            <div class="">
                 <h1 class="">Graphic design</h1>
                 <p class=""">
@@ -67,7 +67,7 @@
                 </p>
            </div>
       </section>
-    <section class="bg-photography bg-size-norepeat-center">
+    <section class="text-group2 bg-photography bg-size-norepeat-center">
             <div class="">
                 <h1 class="">Photography</h1>
                 <p class="">
@@ -77,9 +77,9 @@
            
     </section>
   </section>
-  <!-- <section class="client-test">
+  <section class="client-test">
       <div class="client-topic">Client testimonials</div>
-      <div class="client-all">
+      <div class="client-all flex-d-row">
         <section class="client-card">
             <img src="/Challange7_sunnyside-agency-landing-page-main/images/image-emily.jpg" alt="" class="client-profile">
             <p class="client-description">
@@ -112,7 +112,7 @@
         </section>
       </div>
   </section>
-  <section class="second-foot">
+ <section class="second-foot flex-d-row">
       <section class="second-foot-inside1">
         <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="" class="">
         <img src="./images/desktop/image-gallery-orange.jpg" alt="" class="">
@@ -124,7 +124,7 @@
       </section>
       
   </section>
-  <footer class="footer">
+    <footer class="footer">
       <nav class="footer-group">
         <span class="footer-icon">sunnyside</span>
         <ul class="footer-nav">
@@ -139,7 +139,7 @@
           <i class="fa-brands fa-pinterest"></i>
         </div>
       </nav>
-  </footer> -->
+  </footer>
   
  <script src="./script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
