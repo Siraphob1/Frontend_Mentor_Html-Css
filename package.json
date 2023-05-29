@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "tailwindcss": "^3.3.2"
+  },
+  "scripts": {
+    "build": "npx tailwindcss -i ./Challange8_blogr-landing-page-main/src/input.css -o ./Challange8_blogr-landing-page-main/output.css --watch"
   }
 }

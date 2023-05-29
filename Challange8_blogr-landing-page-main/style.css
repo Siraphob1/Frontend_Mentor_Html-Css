@@ -43,3 +43,22 @@
     --L-Mobile: 375px;
     --L-Desktop: 1440px;
 }
+
+header{
+    background: url("/Challange8_blogr-landing-page-main/images/bg-pattern-intro-mobile.svg"), linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-position: 35% 40%;
+    opacity: 0.85;
+    border-radius: 0 0 0 7rem;
+    font-family: var(--FF--UBUNTU);
+    font-weight: var(--FW-UBUNTU-M);
+}
+header h1{
+    font-family: var(--FF--UBUNTU);
+    font-size: 1.9rem;
+    font-weight: var(--FW-UBUNTU-M);
+}
+header p{
+    font-family: var(--FF-OVERPASS);
+    font-size: var(--FS);
+    font-weight: var(--FW-OVERPASS-S);
+}
