@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Fugaz+One&family=Hanken+Grotesk:wght@500&family=League+Spartan&family=Montserrat:wght@100&family=Nunito:wght@200&family=Outfit&family=Overpass:wght@100;300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root{
+/*-------------------------COLOR------------------------- */
+    /* Primary */
+    --C-Light-red-CTA-text: hsl(356, 100%, 66%);
+    --C-Very-light-red-CTA-hover-background: hsl(355, 100%, 74%);
+    --C-Very-dark-blue-headings: hsl(208, 49%, 24%);
+
+
+    /* Neutral */
+    --C-White-text: hsl(0, 0%, 100%);
+    --C-Grayish-blue-footer-text: hsl(240, 2%, 79%);
+    --C-Very-dark-grayish-blue-body-copy-: hsl(207, 13%, 34%);
+    --C-Very-dark-black-blue-footer-background: hsl(240, 10%, 16%);
+
+
+    /* Gradient */
+    /* Background gradient - Intro/CTA mobile nav */
+    --C-Very-light-red: hsl(13, 100%, 72%);
+    --C-Light-red: hsl(353, 100%, 62%);
+
+    /* Background gradient - body */
+    --C-Very-dark-gray-blue: hsl(237, 17%, 21%);
+    --C-Very-dark-desaturated-blue: hsl(237, 23%, 32%);
+
+/*-------------------------FONT------------------------- */
+    /* FONT FAMILY */
+    --FF-OVERPASS: 'Overpass', sans-serif;
+    --FF--UBUNTU: 'Ubuntu', sans-serif;
+
+    /* FONT SIZE */
+    --FS:16px;
+
+    /* FONT WEIGHT */
+    --FW-OVERPASS-S:300;
+    --FW-OVERPASS-M:600;
+
+    --FW-UBUNTU-S:400;
+    --FW-UBUNTU-M:500;
+    --FW-UBUNTU-L:700;
+/*-------------------------Layout------------------------- */
+    --L-Mobile: 375px;
+    --L-Desktop: 1440px;
+}
