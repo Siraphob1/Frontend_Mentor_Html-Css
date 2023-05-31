@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
   
   <title>Frontend Mentor | [Blogr]</title> 
 
@@ -13,97 +13,139 @@
 </head>
 <body>
 
-<header class="text-white ">
-    <nav class="flex justify-between items-center px-6 pt-10">
-      <div class="flex items-center">
-        <a href="#">
+  <header class="text-white">
+    <nav class="flex justify-between items-center pt-10 px-8 w-screen  lg:justify-normal lg:px-20 ">
+      <a href="#" class="lg:z-auto ">
           <img src="/Challange8_blogr-landing-page-main/images/logo.svg" alt="">
-        </a>
-        <ul class=" pl-10 hidden md:flex ">
-          <li class="pr-8 inline-flex items-center">
-            <a href="#" class="pr-2">Product
-            </a>
-            <img src="/Challange8_blogr-landing-page-main/images/icon-arrow-light.svg" alt="">
-          </li>
-          <li class="pr-8 inline-flex items-center">
-            <a href="#" class="pr-2">Company
-            </a>
-            <img src="/Challange8_blogr-landing-page-main/images/icon-arrow-light.svg" alt="">
-          </li>
-          <li class="pr-8 inline-flex items-center">
-            <a href="#" class="pr-2">Conect
-            </a>
-            <img src="/Challange8_blogr-landing-page-main/images/icon-arrow-light.svg" alt="">
-          </li>
-         
-        </ul>
+      </a>
+      <div class=" absolute z-[1] top-28 left-1/2 -translate-x-1/2 bg-white w-10/12  text-center rounded-md  text-black  hidden
+                  lg:relative lg:z-auto lg:px-0 lg:py-0 lg:flex  lg:text-left lg:translate-x-0 lg:left-0 lg:top-0 lg:justify-between lg:items-center lg:w-full lg:ml-8 lg:bg-transparent lg:text-white 
+                  "
+           id="menuarea">
+          <ul class="lg:flex  ">
+            <li class="mt-8 mb-2 relative
+                      lg:mt-0 lg:mb-0 lg:px-4 ">
+              <div  onclick="ClickTab(this)" id="product0" class="schoicemenu">
+                Product
+                <span class="i-arrow "></span>                
+              </div>
+              <div class="bg-slate-500 w-10/12  mx-auto mt-3   rounded-md 
+                          lg:absolute lg:top-10 lg:pl-4 lg:pr-6 lg:w-40  shidden"
+                      id="product1">
+                  <div class="pt-4">Overview</div>
+                  <div class="pt-2">Pricing</div>
+                  <div class="pt-2">Marketplace</div>
+                  <div class="pt-2">Features</div>
+                  <div class="pt-2">Integrations</div>
+              </div>
+              
+            </li>
+            <li class=" mb-2 relative
+                        lg:mb-0 lg:px-4 ">
+              <div  onclick="ClickTab(this)" id="company0" class="schoicemenu">
+                Company
+                <span class="i-arrow"></span>
+              </div>
+              <div class="bg-slate-500 w-10/12  mx-auto mt-3 rounded-md 
+                          lg:absolute lg:top-10 lg:pl-4 lg:pr-6 lg:w-40  shidden "
+                    id="company1">
+                  <div class="pt-4">About</div>
+                  <div class="pt-2">Team</div>
+                  <div class="pt-2">Blog</div>
+                  <div class="pt-2">Careers</div>
+              </div>
+            </li>
+            <li class=" mb-5 relative
+                        lg:mb-0 lg:px-4 ">
+              <div  onclick="ClickTab(this)" id="connect0" class="schoicemenu">
+                Connect              
+                <span class="i-arrow "></span>  
+              </div>
+              <div class="bg-slate-500 w-10/12  mx-auto mt-3 rounded-md 
+                          lg:absolute lg:top-10 lg:pl-4 lg:pr-6 lg:w-40 shidden"
+                    id="connect1">
+                  <div class="pt-4">Contact</div>
+                  <div class="pt-2">Newsletter</div>
+                  <div class="pt-2">LinkedIn</div>
+              </div>
+            </li>
+          </ul>
+          <ul class="border-t-2
+                     lg:flex lg:items-center lg:border-t-0">
+            <li class="mt-5 mb-3 
+                      lg:mt-0 lg:mb-0 lg:px-4">
+              <a href="#">Login</a>
+            </li>
+            <li class="lg:px-4 lg:py-2 lg:bg-black lg:rounded-3xl">
+              <a href="#">SingUp</a>
+            </li>
+          </ul>
       </div>
-     <ul class="hidden md:flex pr-16 items-center">
-        <li class="pr-8 ">
-          <a href="#">Login</a>
-        </li>
-        <li class="bg-white rounded-3xl text-black px-6 py-2">
-          <a href="#">SignUp</a>
-        </li>
-     </ul>
-      <a href="#" class="md:hidden">
-        <img src="/Challange8_blogr-landing-page-main/images/icon-hamburger.svg" alt="">
-      </a>        
+      <a href="#" class="lg:hidden ihambergur" id="iconmenu" onclick="ClickMenu()"></a>
     </nav>
-    <article class="mt-32 text-center px-10">
-      <h1>A modern publishing platform</h1>
-      <p class="mt-3">Grow your audience and build your online brand</p>
-      <div class="mt-10 pb-44 flex justify-center ">
-        <span class="mr-5"><a href="#">Start for Free</a></span>
-        <span><a href="#">Learn More</a></span>
-      </div>
-    </article>
-</header>
+    <div class="text-center mx-auto mt-40 px-9 pb-40 z-[0]">
+        <h1>A modern publishing platform</h1>
+        <p class="mt-4">Grow your audience and build your online brand</p>
+        <div class="mt-8  flex justify-center">
+            <button class="mr-2 px-4 py-2 bg-black rounded-3xl">Start for Free</button>
+            <button class="px-4 py-2 bg-black  rounded-3xl">Learn More</button>
+        </div>
+    </div>
+  </header>
+  <main>
+      <section class="sec1 relative lg:overflow-hidden
+                      lg:h-[62rem]">
+          <h1 class="mt-20
+                    lg:mt-40">Designed for the future</h1>
+          <div class="group-sec1 
+                      lg:flex ">
+            <div class="sec1-img
+                      lg:absolute "></div>
+            <div class="sec1-description 
+                      lg:w-1/2">
+               <section class="sec1-description1
+                      lg:mt-16">
+                  <h1>  Introducing an extensible editor
+                  </h1>
+                  <p>   Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+                    The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+                    videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+                    change the looks of a blog.
+                  </p>
+               </section> 
+               <section class="sec1-description2 mt-10
+                      lg:mt-16">
+                    <h1>  Robust content management
+                    </h1>
+                    <p>  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+                      by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+                    </p>
+               </section> 
+            </div>
+          </div>
+
+      </section>
+      <section class="sec2 relative">
+        <div class="sec2-img"></div>
+        <div class="sec2-group">
+            <h1>  State of the Art Infrastructure
+            </h1>
+            <p>  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+              This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+            </p>
+        </div>
+      </section>
+  </main>
+
+
+
+
   <!-- 
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
 
-  Company
 
-  About
-  Team
-  Blog
-  Careers
+    
 
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn
-  
-  Login
-  Sign Up
-
-  
-  
-
-  
-  
-
-  Designed for the future
-
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
-
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
 
   Free, open, simple
   Blogr is a free and open source application backed by a large community of helpful developers. It supports 
@@ -136,5 +178,6 @@
   LinkedIn
  -->
  
+ <script src="./script.js"></script>
 </body>
 </html>
