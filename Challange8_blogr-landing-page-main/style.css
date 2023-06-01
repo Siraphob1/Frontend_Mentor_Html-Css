@@ -128,30 +128,138 @@ header p{
 .sec2{
     background: url(/Challange8_blogr-landing-page-main/images/bg-pattern-circles.svg), linear-gradient(150deg, hsl(237, 17%, 21%) 0%, hsl(237, 23%, 32%));
     border-top-right-radius: 100px;
-    background-position: 50% -900%;
+    border-bottom-left-radius: 100px;
+    background-position:center bottom 200px, center;
     background-repeat: no-repeat;
     background-size: 160% auto;
     color: var(--C-White-text);
-    height: 600px;
-
+    max-height: 550px;
+    height: 550px;
+    position: relative;
 }
+.sec2-img{
+    content: url("/Challange8_blogr-landing-page-main/images/illustration-phones.svg");
+    width: 340px;
+    position: absolute;
+    left: 50%;
+    top: -30%;
+    transform: translateX(-50%);
+}
+.sec2-group {
+    padding-top: 14rem;
+}
+.sec2-group h1,.sec2-group p{
+    font-family: var(--FF-OVERPASS);
+    text-align: center;
+    padding: 0 2rem;
+}
+.sec2-group h1{
+    font-size: 2rem;
+    line-height: normal;
+    font-weight: var(--FW-OVERPASS-M);
+}
+.sec2-group p{
+    font-size: var(--FS);
+    font-weight: var(--FW-OVERPASS-S);
+    color: var(--C-Grayish-blue-footer-text);
+    margin-top: 1rem;
+}
+
+/*--------------SEC3--------------*/
+.sec3{
+    padding-bottom: 4rem;
+}
+.sec3-inside-img{
+    content: url("./images/illustration-laptop-mobile.svg");
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.sec3-description1 , .sec3-description2{
+    font-family: var(--FF-OVERPASS);
+    text-align: center;
+    padding: 0 2rem;
+    margin: 0 auto;
+    max-width: 504px;
+}
+.sec3-description1 h1 , .sec3-description2 h1 {
+    color: var(--C-Very-dark-blue-headings);
+    font-size: 2rem;
+    font-weight: var(--FW-OVERPASS-M);
+}
+.sec3-description1 p , .sec3-description2 p {
+    color: var(--C-Very-dark-grayish-blue-body-copy-);
+    font-size: var(--FS);
+    font-weight: var(--FW-OVERPASS-S);
+    margin-top: 1rem;
+}
+
 
 @media only screen and (min-width:1024px){
     .i-arrow{
         content: url("./images/icon-arrow-light.svg");    
     }
+    .sec1 >h1{
+        padding: 0;
+    }
     .sec1-img{
         content: url("/Challange8_blogr-landing-page-main/images/illustration-editor-desktop.svg");
         top: 2rem;
-        left: 51%;
+        left: 53%;
         margin: 2rem auto;
         height: 60vw;
         width: 65vw;
+        z-index: -99;
     }
     
     .sec1-description section h1 , .sec1-description section p{
         padding-left: 7rem;
         padding-right: 9rem;
         text-align: start;
+        z-index: -99;
+    }
+
+    .sec2{
+        background-position:top -550px left -215px, center;
+        background-size: 100% auto;
+        display: flex;    
+        justify-content: end;
+        margin-top: 0;    
+        max-height: 350px;
+    }
+    .sec2-group{
+        width: 50vw;
+        padding-top: 6rem;
+        padding-right: 2rem ;
+        margin-top: 0;
+    }
+    .sec2-img{
+       width: 460px;
+       top:-3rem;
+       left: 8rem;
+       transform: translateX(0);
+    }
+    .sec2-group h1,.sec2-group p{
+        text-align: start;
+    }
+
+    .sec3{
+        display: flex;
+    }
+    .sec3-img ,.sec3-group{
+        width: 50vw;
+        margin: 0;
+    }
+    .sec3-group{
+        margin-top: 10rem;
+    }
+    .sec3-inside-img{
+        margin: auto 0;
+        margin-left: -30%;
+        width: 60vw;
+    }
+    .sec3-description1 , .sec3-description2{
+        text-align: start;
+        margin: 0;
     }
 }

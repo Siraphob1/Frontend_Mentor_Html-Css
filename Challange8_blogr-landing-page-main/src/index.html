@@ -13,8 +13,9 @@
 </head>
 <body>
 
-  <header class="text-white">
-    <nav class="flex justify-between items-center pt-10 px-8 w-screen  lg:justify-normal lg:px-20 ">
+  <header class="text-white z-[1]">
+    <nav class="flex justify-between items-center pt-10 px-8 w-screen z-[1] 
+                lg:justify-normal lg:px-20 ">
       <a href="#" class="lg:z-auto ">
           <img src="/Challange8_blogr-landing-page-main/images/logo.svg" alt="">
       </a>
@@ -29,14 +30,14 @@
                 Product
                 <span class="i-arrow "></span>                
               </div>
-              <div class="bg-slate-500 w-10/12  mx-auto mt-3   rounded-md 
+              <div class="bg-slate-500 w-10/12  mx-auto mt-3   rounded-md flex flex-col
                           lg:absolute lg:top-10 lg:pl-4 lg:pr-6 lg:w-40  shidden"
                       id="product1">
-                  <div class="pt-4">Overview</div>
-                  <div class="pt-2">Pricing</div>
-                  <div class="pt-2">Marketplace</div>
-                  <div class="pt-2">Features</div>
-                  <div class="pt-2">Integrations</div>
+                    <a href="#" class="pt-4">Overview</a>
+                    <a href="#" class="pt-2">Pricing</a>
+                    <a href="#" class="pt-2">Marketplace</a>
+                    <a href="#" class="pt-2">Features</a>
+                    <a href="#" class="pt-2">Integrations</a>                 
               </div>
               
             </li>
@@ -46,13 +47,13 @@
                 Company
                 <span class="i-arrow"></span>
               </div>
-              <div class="bg-slate-500 w-10/12  mx-auto mt-3 rounded-md 
+              <div class="bg-slate-500 w-10/12  mx-auto mt-3 rounded-md flex flex-col
                           lg:absolute lg:top-10 lg:pl-4 lg:pr-6 lg:w-40  shidden "
                     id="company1">
-                  <div class="pt-4">About</div>
-                  <div class="pt-2">Team</div>
-                  <div class="pt-2">Blog</div>
-                  <div class="pt-2">Careers</div>
+                    <a href="#" class="pt-4">About</a>
+                    <a href="#" class="pt-2">Team</a>
+                    <a href="#" class="pt-2">Blog</a>
+                    <a href="#" class="pt-2">Careers</a>
               </div>
             </li>
             <li class=" mb-5 relative
@@ -61,12 +62,12 @@
                 Connect              
                 <span class="i-arrow "></span>  
               </div>
-              <div class="bg-slate-500 w-10/12  mx-auto mt-3 rounded-md 
+              <div class="bg-slate-500 w-10/12  mx-auto mt-3 rounded-md flex flex-col
                           lg:absolute lg:top-10 lg:pl-4 lg:pr-6 lg:w-40 shidden"
                     id="connect1">
-                  <div class="pt-4">Contact</div>
-                  <div class="pt-2">Newsletter</div>
-                  <div class="pt-2">LinkedIn</div>
+                    <a href="#" class="pt-4">Contact</a>
+                    <a href="#" class="pt-2">Newsletter</a>
+                    <a href="#" class="pt-2">LinkedIn</a>
               </div>
             </li>
           </ul>
@@ -83,7 +84,7 @@
       </div>
       <a href="#" class="lg:hidden ihambergur" id="iconmenu" onclick="ClickMenu()"></a>
     </nav>
-    <div class="text-center mx-auto mt-40 px-9 pb-40 z-[0]">
+    <div class="text-center mx-auto mt-40 px-9 pb-40 z-0">
         <h1>A modern publishing platform</h1>
         <p class="mt-4">Grow your audience and build your online brand</p>
         <div class="mt-8  flex justify-center">
@@ -92,15 +93,16 @@
         </div>
     </div>
   </header>
-  <main>
-      <section class="sec1 relative lg:overflow-hidden
-                      lg:h-[62rem]">
+  <main class="z-0">
+      <section class="sec1 relative z-0 
+                      lg:h-[62rem] lg:overflow-hidden">
           <h1 class="mt-20
                     lg:mt-40">Designed for the future</h1>
           <div class="group-sec1 
                       lg:flex ">
             <div class="sec1-img
-                      lg:absolute "></div>
+                      lg:absolute ">
+            </div>
             <div class="sec1-description 
                       lg:w-1/2">
                <section class="sec1-description1
@@ -125,7 +127,7 @@
           </div>
 
       </section>
-      <section class="sec2 relative">
+      <section class="sec2  mt-60">
         <div class="sec2-img"></div>
         <div class="sec2-group">
             <h1>  State of the Art Infrastructure
@@ -134,6 +136,29 @@
               This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
             </p>
         </div>
+      </section>
+      <section class="sec3 mt-20">
+          <div class="sec3-img">
+              <div class="sec3-inside-img"></div>
+          </div>
+          <div class="sec3-group">
+              <div class="sec3-description1 mt-8">
+                  <h1>  Free, open, simple
+                  </h1>
+                  <p>  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+                    features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+                    and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+                  </p>
+              </div>
+              <div class="sec3-description2 mt-8">
+                <h1> Powerful tooling
+                </h1>
+                <p>  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+                  capable of producing even the most complicated sites.
+                </p>
+            </div>
+
+          </div>
       </section>
   </main>
 
@@ -147,14 +172,7 @@
     
 
 
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
 
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
 
   Product
 
