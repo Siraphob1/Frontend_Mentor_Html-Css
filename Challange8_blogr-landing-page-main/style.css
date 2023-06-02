@@ -3,21 +3,21 @@
 :root{
 /*-------------------------COLOR------------------------- */
     /* Primary */
-    --C-Light-red-CTA-text: hsl(356, 100%, 66%);
+    --C-Light-red-CTA-text: #ff525d;
     --C-Very-light-red-CTA-hover-background: hsl(355, 100%, 74%);
     --C-Very-dark-blue-headings: hsl(208, 49%, 24%);
 
 
     /* Neutral */
     --C-White-text: hsl(0, 0%, 100%);
-    --C-Grayish-blue-footer-text: hsl(240, 2%, 79%);
-    --C-Very-dark-grayish-blue-body-copy-: hsl(207, 13%, 34%);
+    --C-Grayish-blue-footer-text: #c8c8cb;
+    --C-Very-dark-grayish-blue-body-copy-: #4b5862;
     --C-Very-dark-black-blue-footer-background: hsl(240, 10%, 16%);
 
 
     /* Gradient */
     /* Background gradient - Intro/CTA mobile nav */
-    --C-Very-light-red: hsl(13, 100%, 72%);
+    --C-Very-light-red: #ff8f70;
     --C-Light-red: hsl(353, 100%, 62%);
 
     /* Background gradient - body */
@@ -50,7 +50,7 @@
 header{
     background: url("/Challange8_blogr-landing-page-main/images/bg-pattern-intro-mobile.svg"), linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     background-position: 35% 40%;
-    opacity: 0.85;
+    opacity: 1;
     border-radius: 0 0 0 7rem;
     font-family: var(--FF--UBUNTU);
     font-weight: var(--FW-UBUNTU-M);
@@ -85,9 +85,14 @@ header p{
     transform: rotate(0deg);
 }
 .shidden{
+    background-color: hsl(240, 2%, 95%);;
+    color: var(--C-Very-dark-blue-headings);
     height: 0px;
     overflow: hidden;
     transition: height 0.5s ease;
+}
+.shidden a:hover{
+    font-weight: var(--FW-OVERPASS-M);
 }
 .shight-product{
     height: 190px;
@@ -105,7 +110,7 @@ header p{
 
 /* PATTERN INTRO */
 .sec1-img{
-    content: url("/Challange8_blogr-landing-page-main/images/illustration-editor-mobile.svg");
+    content: url("./images/illustration-editor-mobile.svg");
     margin: 2rem auto;
     height: 70vw;
     width: 90vw;
@@ -129,7 +134,7 @@ header p{
 
 /*--------------SEC2--------------*/
 .sec2{
-    background: url(/Challange8_blogr-landing-page-main/images/bg-pattern-circles.svg), linear-gradient(150deg, hsl(237, 17%, 21%) 0%, hsl(237, 23%, 32%));
+    background: url("./images/bg-pattern-circles.svg"), linear-gradient(150deg, hsl(237, 17%, 21%) 0%, hsl(237, 23%, 32%));
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
     background-position:center bottom 200px, center;
@@ -141,7 +146,7 @@ header p{
     position: relative;
 }
 .sec2-img{
-    content: url("/Challange8_blogr-landing-page-main/images/illustration-phones.svg");
+    content: url("./images/illustration-phones.svg");
     width: 340px;
     position: absolute;
     left: 50%;
@@ -220,6 +225,9 @@ header p{
 }
 
 @media only screen and (min-width:1024px){
+    .shidden{
+        background-color: var(--C-White-text);
+    }
     .i-arrow{
         content: url("./images/icon-arrow-light.svg");    
     }
@@ -227,7 +235,7 @@ header p{
         padding: 0;
     }
     .sec1-img{
-        content: url("/Challange8_blogr-landing-page-main/images/illustration-editor-desktop.svg");
+        content: url("./images/illustration-editor-desktop.svg");
         top: 2rem;
         left: 53%;
         margin: 2rem auto;

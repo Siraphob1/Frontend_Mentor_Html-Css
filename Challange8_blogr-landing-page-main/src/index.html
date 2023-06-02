@@ -13,24 +13,24 @@
 </head>
 <body>
 
-  <header class="text-white z-[1]">
+  <header class="text-white z-[1] relative">
     <nav class="flex justify-between items-center pt-10 px-8 w-screen z-[1] 
                 lg:justify-normal lg:px-20 ">
       <a href="#" class="lg:z-auto ">
-          <img src="/Challange8_blogr-landing-page-main/images/logo.svg" alt="">
+          <img src="../images/logo.svg" alt="">
       </a>
-      <div class=" absolute z-[1] top-28 left-1/2 -translate-x-1/2 bg-white w-10/12  text-center rounded-md  text-black  hidden
+      <div class="absolute z-[1] top-28 left-1/2 -translate-x-1/2 bg-white w-10/12  text-center rounded-md  text-black  hidden
                   lg:relative lg:z-auto lg:px-0 lg:py-0 lg:flex  lg:text-left lg:translate-x-0 lg:left-0 lg:top-0 lg:justify-between lg:items-center lg:w-full lg:ml-8 lg:bg-transparent lg:text-white 
                   "
            id="menuarea">
           <ul class="lg:flex  ">
-            <li class="mt-8 mb-2 relative
+            <li class="mt-8 mb-2 
                       lg:mt-0 lg:mb-0 lg:px-4 ">
               <div  onclick="ClickTab(this)" id="product0" class="schoicemenu">
                 Product
                 <span class="i-arrow "></span>                
               </div>
-              <div class="bg-slate-500 w-10/12  mx-auto mt-3   rounded-md flex flex-col
+              <div class=" w-10/12  mx-auto mt-3   rounded-md flex flex-col
                           lg:absolute lg:top-10 lg:pl-4 lg:pr-6 lg:w-40  shidden"
                       id="product1">
                     <a href="#" class="pt-4">Overview</a>
@@ -41,13 +41,13 @@
               </div>
               
             </li>
-            <li class=" mb-2 relative
+            <li class=" mb-2 
                         lg:mb-0 lg:px-4 ">
               <div  onclick="ClickTab(this)" id="company0" class="schoicemenu">
                 Company
                 <span class="i-arrow"></span>
               </div>
-              <div class="bg-slate-500 w-10/12  mx-auto mt-3 rounded-md flex flex-col
+              <div class=" w-10/12  mx-auto mt-3 rounded-md flex flex-col
                           lg:absolute lg:top-10 lg:pl-4 lg:pr-6 lg:w-40  shidden "
                     id="company1">
                     <a href="#" class="pt-4">About</a>
@@ -56,13 +56,13 @@
                     <a href="#" class="pt-2">Careers</a>
               </div>
             </li>
-            <li class=" mb-5 relative
+            <li class=" mb-5 
                         lg:mb-0 lg:px-4 ">
               <div  onclick="ClickTab(this)" id="connect0" class="schoicemenu">
                 Connect              
                 <span class="i-arrow "></span>  
               </div>
-              <div class="bg-slate-500 w-10/12  mx-auto mt-3 rounded-md flex flex-col
+              <div class="w-10/12  mx-auto mt-3 rounded-md flex flex-col
                           lg:absolute lg:top-10 lg:pl-4 lg:pr-6 lg:w-40 shidden"
                     id="connect1">
                     <a href="#" class="pt-4">Contact</a>
@@ -72,12 +72,13 @@
             </li>
           </ul>
           <ul class="border-t-2
-                     lg:flex lg:items-center lg:border-t-0">
-            <li class="mt-5 mb-3 
-                      lg:mt-0 lg:mb-0 lg:px-4">
+                     lg:flex lg:items-center lg:border-t-0 "> 
+            <li class="mt-5 mb-3  w-20 hover:bg-[#ff525d] hover:text-white  mx-auto px-4 py-2 hover:font-bold rounded-3xl
+                      lg:mt-0 lg:mb-0 lg:px-4 lg:hover:bg-[#c8c8cb50] lg:hover:text-white">
               <a href="#">Login</a>
             </li>
-            <li class="lg:px-4 lg:py-2 lg:bg-black lg:rounded-3xl">
+            <li class=" mb-3 lg:mb-0 w-20 bg-[#ff525d] text-white  mx-auto px-4 py-2 font-bold rounded-3xl
+                         lg:bg-white lg:text-[#ff525d] lg:hover:bg-[#c8c8cb50] hover:text-white ">
               <a href="#">SingUp</a>
             </li>
           </ul>
@@ -88,13 +89,13 @@
         <h1>A modern publishing platform</h1>
         <p class="mt-4">Grow your audience and build your online brand</p>
         <div class="mt-8  flex justify-center">
-            <button class="mr-2 px-4 py-2 bg-black rounded-3xl">Start for Free</button>
-            <button class="px-4 py-2 bg-black  rounded-3xl">Learn More</button>
+            <button class="mr-2 px-4 py-2 bg-white text-[#ff525d] hover:bg-[#c8c8cb50] hover:text-white font-bold rounded-3xl">Start for Free</button>
+            <button class="px-4 py-2 border-white border-solid border-2  hover:bg-white hover:text-[#ff525d]  rounded-3xl">Learn More</button>
         </div>
     </div>
   </header>
   <main class="z-0">
-      <section class="sec1 relative z-0 
+      <section class="sec1 lg:relative z-0 
                       lg:h-[62rem] lg:overflow-hidden">
           <h1 class="mt-20
                     lg:mt-40">Designed for the future</h1>
@@ -125,7 +126,6 @@
                </section> 
             </div>
           </div>
-
       </section>
       <section class="sec2  mt-60">
         <div class="sec2-img"></div>
@@ -161,38 +161,38 @@
           </div>
       </section>
       <section class="sec4 mt-20 pt-16 flex flex-col items-center text-center
-                      lg:flex-row lg:justify-between lg:items-start lg:px-36 lg:pb-8" >
+                      lg:flex-row lg:justify-between lg:items-start lg:pl-36 lg:pb-8 lg:pr-80 lg:text-start" >
           <a href="#" class="sec4-icon"></a>
           <section class="scol1">
               <div class="flex flex-col mt-12
-                          lg:mt-4">
+                          lg:mt-2">
                 Product
-                <a href="#" class="mt-4">Overview</a>
-                <a href="#">Pricing</a>
-                <a href="#">Marketplace</a>
-                <a href="#">Features</a>
-                <a href="#">Integrations</a>     
+                <a href="#" class="mt-6">Overview</a>
+                <a href="#" class="lg:mt-2">Pricing</a>
+                <a href="#" class="lg:mt-2">Marketplace</a>
+                <a href="#" class="lg:mt-2">Features</a>
+                <a href="#" class="lg:mt-2">Integrations</a>     
               </div>
               
           </section>
           <section class="scol2">
               <div class="flex flex-col mt-12
-                          lg:mt-4">
+                          lg:mt-2">
                 Company
-                <a href="#" class="mt-4">About</a>
-                <a href="#">Team</a>
-                <a href="#">Blog</a>
-                <a href="#">Careers</a>
+                <a href="#" class="mt-6">About</a>
+                <a href="#" class="lg:mt-2">Team</a>
+                <a href="#" class="lg:mt-2">Blog</a>
+                <a href="#" class="lg:mt-2">Careers</a>
               </div>
                            
           </section>
           <section class="scol3">
               <div class="flex flex-col mt-12 mb-4
-                          lg:mt-4">
+                          lg:mt-2">
                 Connect
-                <a href="#" class="mt-4">Contact</a>
-                <a href="#">Newsletter</a>
-                <a href="#">LinkedIn</a>           
+                <a href="#" class="mt-6">Contact</a>
+                <a href="#" class="lg:mt-2">Newsletter</a>
+                <a href="#" class="lg:mt-2">LinkedIn</a>           
               </div>
               
           </section>
